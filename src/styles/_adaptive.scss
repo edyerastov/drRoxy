@@ -1,0 +1,602 @@
+@media only screen and (max-width: 1440px) {
+  body{
+    &::before {
+      left: 110px;
+      top: 70px;
+    }
+    &::after{
+      top: 70px;
+      right: 110px;
+    }
+  }
+
+  .section-title{
+    font-size: 60px;
+
+    &::before{
+      width: 300px!important;
+    }
+
+  }
+
+  .promo {
+
+    .bg-flower{
+      top: 70px;
+      height: calc(100vh - 70px);
+    }
+
+    header {
+      height: 70px;
+      padding: 5px 50px;
+
+      .logo {
+        height: 50px;
+      }
+
+      .navbar .nav-item{
+        margin-right: 40px;
+
+        &:hover::before{
+          bottom: -14px;
+        }
+
+      }
+
+      .phone {
+        width: 112px;
+        height: 70px;
+        margin: -4px -50px -5px 0;
+      }
+
+    }
+
+    .promo-slider .slide .slide-content .title{
+      font-size: 70px;
+    }
+
+    .promo-slider .slide .slide-content .sub-title{
+      font-size: 21px;
+    }
+
+    .socials{
+      left: 38px;
+    }
+
+  }
+  .custom-container{
+    max-width: 1200px;
+  }
+
+  .about {
+    padding-top: 50px;
+    padding-bottom: 35px;
+
+    .about-info {
+
+      .desc{
+        padding: 20px;
+        height: 350px;
+        width: 600px;
+
+        p{
+          line-height: 30px;
+        }
+
+      }
+
+      .slider-controls {
+        height: 500px;
+
+        .about-slider {
+          width: 740px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .services{
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    .services-slider{
+
+      .slider-desc{
+        width: 710px;
+        padding: 30px 25px;
+
+        p{
+          line-height: 30px;
+        }
+
+      }
+
+    }
+
+    .thumbnail-services-slider{
+      margin-top: 40px;
+
+      .slide-title{
+        padding: 13px 25px;
+      }
+
+    }
+
+  }
+
+  .team{
+    height: 700px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+
+    .team-slider{
+
+      .slide{
+
+        .dr-photo{
+          width: 62%;
+        }
+
+        .slide-desc{
+          padding: 25px 20px;
+
+          p{
+            line-height: 30px;
+            margin-top: 15px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  footer{
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    #map{
+      height: 380px;
+    }
+
+    .contacts{
+      font-size: 20px;
+    }
+
+    .contact-form{
+      margin-top: 50px;
+
+      .footer-title{
+        z-index: 2;
+        position: relative;
+      }
+
+    }
+
+  }
+
+  .rights{
+    padding: 10px 0;
+
+    span{
+      font-size: 12px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  body{
+    &::before {
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
+  }
+
+  .custom-container{
+    overflow: hidden;
+  }
+
+  .section-title{
+    font-size: 35px;
+
+    &::before{
+      width: 300px!important;
+    }
+
+  }
+
+  .promo {
+
+    .bg-flower{
+      top: 320px;
+      left: -215px;
+      height: calc(100vh - 70px);
+    }
+
+    header {
+      height: 70px;
+      padding: 5px;
+      position: initial;
+
+      .logo {
+        display: none;
+      }
+
+      .logo-mobile{
+        display: inline-block;
+        height: 50px;
+        align-self: center;
+      }
+      
+      .navbar{
+        position: initial;
+        margin-left: 0;
+
+        .navbar-collapse{
+          bottom: 0;
+          position: absolute;
+          top: 70px;
+          right: 0;
+          width: 100%;
+          background-color: #222;
+          z-index: 2;
+
+          .collapse-bg{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+          }
+
+          .navbar-nav-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            .navbar-nav{
+              width: 100%;
+              padding: 35px;
+
+              .nav-item {
+
+                &.active .nav-link{
+                  color: $gold;
+                }
+
+                .nav-link{
+                  font-size: 18px;
+                  color: #5A5A5A;
+                }
+
+                & + .nav-item {
+                  margin-top: 45px;
+                }
+
+              }
+
+            }
+
+            .collapse-socials{
+              display: flex;
+              padding: 35px;
+
+              a + a{
+                margin-left: 60px;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .navbar .nav-item{
+        margin-right: 40px;
+
+        &:hover::before{
+          bottom: -14px;
+        }
+
+      }
+
+      .phone {
+        width: 95px;
+        height: 70px;
+        margin: -4px -5px -5px 0;
+      }
+
+    }
+
+    .promo-content{
+      display: flex;
+      margin-top: 80px;
+
+      .title{
+        font-size: 38px;
+        font-family: "Baskerville-Semi-Bold";
+        color: #fff;
+      }
+
+      .sub-title{
+        font-size: 15px;
+        color: $gold;
+        font-family: "Century-Gothic";
+        margin-top: 20px;
+      }
+
+      .sign-up{
+        margin-top: 30px;
+      }
+
+    }
+    
+    .promo-slider{
+      position: initial;
+      height: initial;
+
+      .owl-dots{
+        transform: translateX(-50%);
+      }
+
+      .slide{
+        height: 360px;
+
+        .slider-img{
+          right: 50%;
+          transform: translateX(50%);
+          height: initial;
+        }
+
+        .slide-content{
+          display: none;
+        }
+
+      }
+
+    }
+
+    .promo-slider .slide .slide-content .title{
+      font-size: 70px;
+    }
+
+    .promo-slider .slide .slide-content .sub-title{
+      font-size: 21px;
+    }
+
+    .socials{
+      display: none!important;
+    }
+
+  }
+  .custom-container{
+    max-width: 1200px;
+  }
+
+  .about {
+    padding-top: 20px;
+    padding-bottom: 35px;
+
+    .why-choose-us {
+
+      .title{
+        font-size: 17px;
+      }
+
+      .custom-card {
+        width: 100%;
+
+        .custom-card-title{
+          font-size: 16px;
+        }
+
+        .custom-card-desc{
+          font-size: 14px;
+        }
+
+        & + .custom-card {
+          margin-left: 0;
+          margin-top: 30px;
+        }
+
+      }
+
+    }
+
+    .about-info {
+      flex-direction: column;
+
+      .desc{
+        padding: 15px;
+        height: initial;
+        width: 100%;
+        position: initial;
+        margin-top: 50px;
+
+        p{
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+      }
+
+      .slider-controls {
+        height: 250px;
+        width: 100%;
+
+        .about-slider{
+          width: 100%;
+          height: initial;
+
+          .owl-dots{
+            height: 50px;
+            margin-left: 30%;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .services{
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    .services-bg{
+      height: 63%;
+      left: 35%;
+    }
+
+    .title-absolute{
+      right: initial;
+      left: 15px;
+    }
+
+    .services-slider{
+      margin-top: 80px;
+
+      .slide{
+        display: flex;
+        flex-direction: column-reverse;
+
+        .slider-card{
+          width: 100%;
+
+          .slider-card-title{
+            padding: 15px;
+
+            span{
+              font-size: 14px;
+            }
+
+          }
+
+        }
+
+        .slider-desc{
+          width: 100%;
+          padding: 20px 15px;
+          position: initial;
+
+          p{
+            line-height: 24px;
+            font-size: 14px;
+          }
+
+          .sign-up{
+            font-size: 16px;
+            margin-right: auto;
+          }
+
+        }
+
+      }
+
+    }
+
+    .thumbnail-services-slider{
+      margin-top: 40px;
+      
+      .owl-stage-outer{
+        overflow: initial;
+      }
+
+      .owl-item.active{
+
+        .slide{
+          width: 275px;
+        }
+
+      }
+
+      .slide{
+        width: 205px;
+
+        .slide-title{
+          padding: 13px 25px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .team{
+    height: 700px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+
+    .team-slider{
+
+      .slide{
+
+        .dr-photo{
+          width: 62%;
+        }
+
+        .slide-desc{
+          padding: 25px 20px;
+
+          p{
+            line-height: 30px;
+            margin-top: 15px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  footer{
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    #map{
+      height: 380px;
+    }
+
+    .contacts{
+      font-size: 20px;
+    }
+
+    .contact-form{
+      margin-top: 50px;
+
+      .footer-title{
+        z-index: 2;
+        position: relative;
+      }
+
+    }
+
+  }
+
+  .rights{
+    padding: 10px 0;
+
+    span{
+      font-size: 12px;
+    }
+
+  }
+
+}

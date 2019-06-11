@@ -1,0 +1,33 @@
+doctype html
+head
+    meta(name="viewport" content="width=device-width")
+
+section.promo
+    img(src='../../assets/images/promo-bg.png').bg-flower
+    include modules/promo
+    .socials.d-flex.flex-column.align-items-center
+        a(href="")
+            img(src='../../assets/images/instagram.svg')
+        a(href="")
+            img(src='../../assets/images/facebook.svg')
+
+.custom-container
+    section.about
+        include modules/about
+
+section.services
+    img(src='../../assets/images/services-bg.png').services-bg
+    .custom-container.position-relative
+        include modules/services
+
+section.team
+    include modules/team
+
+footer
+    .custom-container
+        include modules/footer
+
+section.rights
+    include modules/rights
+
+script(src="https://maps.google.com/maps/api/js?key=[AIzaSyCTox4gGw1oOae50InNJGL-tAohTTXl5g4]")

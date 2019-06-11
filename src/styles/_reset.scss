@@ -1,0 +1,156 @@
+// Colors
+$bg_color: #2B2B2B;
+$gold: #E3C874;
+$default_gray: #CECECE;
+$text_bg: #F4F4F4;
+
+// Fonts
+@font-face{
+  font-family: "Baskerville-Regular";
+  src: url('../assets/fonts/Baskerville-Regular.otf');
+}
+@font-face{
+  font-family: "Baskerville-Semi-Bold";
+  src: url('../assets/fonts/Baskerville-Semibold.otf');
+}
+@font-face{
+  font-family: "Baskerville-Bold";
+  src: url('../assets/fonts/baskerville_bold.ttf');
+}
+@font-face{
+  font-family: "Century-Gothic";
+  src: url('../assets/fonts/Century-Gothic.ttf');
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Arial";
+  font-size: 17px;
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    left: 153px;
+    top: 100px;
+    bottom: 0;
+    width: 1px;
+    background-color: #D2D6DD;
+    z-index: 10;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    right: 153px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #D2D6DD;
+    z-index: 10;
+  }
+
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  color: $default_gray;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: $gold;
+}
+img{
+  max-width: 100%;
+  border: none;
+}
+form{
+  margin: 0;
+}
+input[type="submit"]{
+  cursor: pointer;
+  border: none;
+}
+input, textarea{
+  border-radius: 0!important;
+}
+textarea{
+  resize: none;
+  border: none;
+  -webkit-appearance: none;
+  overflow: auto;
+}
+button{
+  background-color: initial;
+  border: none;
+
+  &:focus{
+    outline: none;
+  }
+
+}
+.custom-container{
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.section-title{
+  font-size: 80px;
+  color: #222;
+  font-family: "Baskerville";
+  position: relative;
+  height: fit-content;
+}
+.owl-carousel .owl-dots .owl-dot{
+  width: 18px;
+  height: 18px;
+  border: 1px solid $gold;
+  border-radius: 50%;
+  position: relative;
+
+  &.active::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 13px;
+    width: 13px;
+    background-color: $gold;
+    border-radius: 50%;
+  }
+
+  & + .owl-dot{
+    margin-left: 40px;
+  }
+
+}
+.sign-up{
+  color: $gold;
+  font-size: 22px;
+  font-family: "Baskerville-Bold";
+  width: fit-content;
+
+  &:hover img{
+    margin-left: 25px;
+  }
+
+  img{
+    transition: all .2s linear;
+    margin-left: 20px;
+    width: 27px;
+  }
+
+}

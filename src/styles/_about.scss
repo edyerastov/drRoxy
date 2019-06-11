@@ -1,0 +1,133 @@
+.about{
+  padding-top: 80px;
+  padding-bottom: 55px;
+
+  .about-info{
+    position: relative;
+
+    .desc{
+      position: absolute;
+      background-color: $text_bg;
+      bottom: 0;
+      left: 0;
+      height: 400px;
+      width: 720px;
+      padding: 35px;
+      z-index: 10;
+
+      p{
+        line-height: 36px;
+
+        & + p{
+          margin-top: 20px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .section-title::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 410px;
+    height: 4px;
+    background-color: $gold;
+  }
+
+  .slider-controls{
+    height: 550px;
+    background-color: #222;
+
+    .about-slider{
+      width: 820px;
+      height: 490px;
+
+      .owl-dots{
+        margin-left: 52%;
+        display: flex;
+        width: fit-content;
+        height: 60px;
+        align-items: center;
+      }
+
+    }
+
+  }
+
+
+}
+
+.why-choose-us {
+  margin-top: 40px;
+
+  .title {
+    font-size: 27px;
+    font-family: "Baskerville-Semi-Bold";
+    color: #D2D6DD;
+    font-style: italic;
+  }
+
+  .custom-card{
+    border: 2px solid #D2D6DD;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    width: 400px;
+
+    & .num{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid #D2D6DD;
+      transform: translate(-50%, -50%);
+
+      span{
+        font-size: 25px;
+        font-family: "Century-Gothic";
+        font-weight: bold;
+        color: $gold;
+      }
+
+    }
+
+    & + .custom-card{
+      margin-left: 100px;
+    }
+
+    .custom-card-title{
+      font-size: 20px;
+      font-family: "Century-Gothic";
+      color: $gold;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 270px;
+        background-color: #D2D6DD;
+      }
+
+    }
+    
+    .custom-card-desc{
+      color: #626262;
+    }
+
+  }
+
+}

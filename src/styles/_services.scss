@@ -1,0 +1,102 @@
+.services{
+  background-color: #222222;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  position: relative;
+
+  .services-bg{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+  
+  .services-slider{
+
+    border-bottom: 2px solid #D2D6DD;
+    padding-bottom: 35px;
+
+    .slide{
+      position: relative;
+    }
+
+    .slider-card{
+      width: 50%;
+
+      .slider-card-title{
+        background-color: #fff;
+        padding: 25px 35px;
+        color: $gold;
+      }
+      
+    }
+
+    .slider-desc{
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      padding: 65px 35px 40px 35px;
+      width: 800px;
+      background-color: $text_bg;
+
+      p{
+        line-height: 35px;
+      }
+
+      .sign-up{
+        margin-top: 30px;
+      }
+
+    }
+
+  }
+
+  .title-absolute{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .section-title{
+      color: #fff;
+      margin-right: 30px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        width: 410px;
+        height: 4px;
+        background-color: $gold;
+      }
+
+    }
+    
+  }
+
+  .thumbnail-services-slider{
+    margin-top: 60px;
+
+    .owl-dots{
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    .slide-title{
+      padding: 13px 48px;
+      background-color: #5A5A5A;
+      text-align: center;
+
+      span{
+        color: $default_gray;
+        font-family: "Baskerville-Semi-Bold";
+      }
+
+    }
+
+  }
+  
+}
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="home" transform="translate(-1827.000000, -37.000000)" stroke="#FCEBEC" stroke-width="2">
+            <g id="header">
+                <g id="phone" transform="translate(1828.000000, 38.000000)">
+                    <path d="M14.6345076,23.2628725 L19.296162,18.6012168 L27,23.9742291 L25.2718531,25.7023667 C24.1207652,26.8534549 22.4310914,27.2804927 20.8713205,26.8145306 C16.1027946,25.3899929 11.8191567,22.7783487 8.02040696,18.979598 C4.22166273,15.1808528 1.6100213,10.8972207 0.185482652,6.12870178 C-0.280502139,4.56892587 0.146537878,2.8792401 1.29763333,1.72814434 L3.02577722,0 L8.39878801,7.70384003 L3.73713357,12.3654958" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+img(src='../../assets/images/footer-bg.png').footer-bg
+.row
+    .col-lg-6
+        #map
+    .col-lg-6.d-flex.flex-column
+        span.section-title.align-self-end Контакты
+        ul.contacts
+            li.d-flex.align-items-center
+                img(src='../../assets/images/marker.svg')
+                .d-flex.flex-column.align-self-end
+                    span г. Днепр, ул. Красная, 3А
+                    span Информация о других городах в Instagram
+            li.d-flex.align-items-center
+                img(src='../../assets/images/phone.svg')
+                span +38 (093) 21-88-995
+            li.d-flex.align-items-center
+                img(src='../../assets/images/time.svg')
+                span С 8:00 до 20:00 без выходных
+.contact-form
+    span.footer-title У вас остались еще вопросы или хотите записаться?
+    form.row
+        .col-lg-6
+            input(type="text" placeholder="Ваше имя").form-control
+        .col-lg-6
+            input(type="text" placeholder="Ваш телефонный номер").form-control
+        .col-lg-12
+            button(type="submit").sign-up.d-flex.align-items-center
+                span Записаться
+                img(src="../../assets/images/arrow.svg")
+            span.call-you Мы вам перезвоним
+

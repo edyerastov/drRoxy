@@ -1,0 +1,60 @@
+.service-desc{
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+
+  .bg-price{
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+
+  .socials{
+    position: absolute;
+    left: 55px;
+    top: 25%;
+    transform: translateY(-50%);
+    color: #D2D6DD;
+
+    a {
+      &:hover{
+        color: $gold;
+      }
+
+      & + a {
+        margin-top: 55px;
+      }
+
+    }
+
+  }
+
+  .section-title::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 410px;
+    height: 4px;
+    background-color: $gold;
+  }
+
+  .sub-title{
+    margin-top: 40px;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+    color: $gold;
+  }
+
+  p{
+    line-height: 29px;
+    margin-top: 20px;
+
+  }
+
+  .sign-up{
+    margin-top: 40px;
+  }
+
+}

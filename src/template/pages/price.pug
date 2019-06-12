@@ -2,4 +2,21 @@ doctype html
 head
     meta(name="viewport" content="width=device-width")
 
-h1 Hello!
+.price
+    include modules/header
+
+.custom-container
+    section.service-desc
+        img(src='../../assets/images/price-bg.png').bg-price
+        include modules/service-desc
+        .socials.d-flex.flex-column.align-items-center
+            a(href="")
+                img(src='../../assets/images/instagram.svg')
+            a(href="")
+                img(src='../../assets/images/facebook.svg')
+
+    section.price-list
+        include modules/price-list
+
+section.rights
+    include modules/rights

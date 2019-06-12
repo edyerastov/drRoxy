@@ -33,65 +33,6 @@
 
   }
 
-  header{
-    padding: 15px 50px;
-    border-bottom: 1px solid #D2D6DD;
-    font-family: "Baskerville-Semi-Bold";
-    font-size: 20px;
-    z-index: 10;
-    position: relative;
-    height: 100px;
-
-    .logo-mobile{
-      display: none;
-    }
-
-    .navbar{
-      margin-left: auto;
-
-      .collapse-bg{
-        display: none;
-      }
-
-      .collapse-socials{
-        display: none;
-      }
-
-      .nav-item {
-        position: relative;
-        margin-right: 80px;
-
-        .nav-link{
-          padding-bottom: 0;
-        }
-        
-        &:hover::before{
-          content: '';
-          position: absolute;
-          bottom: -24px;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background-color: $gold;
-        }
-
-        
-      }
-
-    }
-
-    .phone{
-      display: flex;
-      height: 100px;
-      margin: -15px -50px -15px 0;
-      width: 155px;
-      justify-content: center;
-      background-color: $gold;
-      border-left: 2px solid #D2D6DD;
-    }
-
-  }
-
   .promo-content{
     display: none;
   }

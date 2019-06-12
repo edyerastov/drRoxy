@@ -41,13 +41,14 @@ servicesSlider.owlCarousel({
 thumbnailServicesSlider.owlCarousel({
     loop:false,
     nav:false,
-    margin: -30,
     responsive: {
         0: {
+            margin: -30,
             items: 1,
             dots: false
         },
         480: {
+            margin: 30,
             items:5,
             dots: true
         }

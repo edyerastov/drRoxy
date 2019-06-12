@@ -1,0 +1,104 @@
+.price-list{
+  padding-bottom: 60px;
+
+  .price-list-wrapper{
+    border: 4px solid $gold;
+    padding: 40px 40px 90px;
+    text-align: center;
+
+    .price-list-title{
+      font-size: 50px;
+      font-family: "Baskerville";
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 275px;
+        height: 4px;
+        background-color: $gold;
+      }
+
+    }
+
+    .list{
+      margin-top: 60px;
+      font-family: "Century-Gothic";
+      font-size: 19px;
+
+      &.list-1{
+        margin-right: 40px;
+      }
+      &.list-2{
+        margin-right: 40px;
+      }
+
+      .list-item{
+        border-bottom: 1px dotted $gold;
+
+        & + .list-item{
+          margin-top: 35px;
+        }
+
+        span.price{
+          color: $gold;
+        }
+
+      }
+
+    }
+
+  }
+
+  .contact-form{
+    margin-top: 85px;
+    text-align: center;
+
+    .footer-title{
+      font-size: 27px;
+      font-family: 'Baskerville-Semi-Bold';
+      font-style: italic;
+      color: #5A5A5A;
+    }
+
+    form{
+      margin-top: 60px;
+
+      input{
+        border: none;
+        border-bottom: 1px solid #5A5A5A;
+        background-color: initial;
+        color: #5A5A5A;
+        padding-left: 0;
+        padding-bottom: 20px;
+
+        &:focus{
+          background-color: initial;
+          box-shadow: none;
+          border-color: #5A5A5A;
+          color: #5A5A5A;
+        }
+
+        &::placeholder{
+          color: #5A5A5A;
+        }
+
+      }
+
+      .sign-up{
+        margin: 55px auto 20px auto;
+      }
+
+      .call-you{
+        font-size: 18px;
+        color: #dcdcdc;
+      }
+
+    }
+
+  }
+
+}

@@ -1,13 +1,6 @@
 @media only screen and (max-width: 1440px) {
   body{
-    &::before {
-      left: 110px;
-      top: 70px;
-    }
-    &::after{
-      top: 70px;
-      right: 110px;
-    }
+
   }
 
   .section-title{
@@ -20,6 +13,15 @@
   }
 
   .promo {
+
+    &::before {
+      left: 110px;
+      top: 70px;
+    }
+    &::after{
+      top: 70px;
+      right: 110px;
+    }
 
     .bg-flower{
       top: 70px;
@@ -193,12 +195,7 @@
 
 @media only screen and (max-width: 400px) {
   body{
-    &::before {
-      display: none;
-    }
-    &::after{
-      display: none;
-    }
+
   }
 
   .custom-container{
@@ -326,6 +323,13 @@
   }
 
   .promo {
+
+    &::before {
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
 
     .bg-flower{
       top: 320px;

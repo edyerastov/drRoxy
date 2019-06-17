@@ -67,7 +67,7 @@
   .title {
     font-size: 27px;
     font-family: "Baskerville-Semi-Bold";
-    color: #D2D6DD;
+    color: $gold;
     font-style: italic;
   }
 
@@ -77,6 +77,20 @@
     text-align: center;
     position: relative;
     width: 400px;
+    
+    &:hover{
+      background-color: $gold;
+      transition: all linear .2s;
+
+      .custom-card-title{
+        color: #fff;
+      }
+      
+      .custom-card-desc{
+        color: #fff;
+      }
+
+    }
 
     & .num{
       position: absolute;

@@ -11513,24 +11513,6 @@ body {
   font-family: "Arial";
   font-size: 17px;
   position: relative; }
-  body::before {
-    content: '';
-    position: absolute;
-    left: 153px;
-    top: 100px;
-    bottom: 0;
-    width: 1px;
-    background-color: #D2D6DD;
-    z-index: 10; }
-  body::after {
-    content: '';
-    position: absolute;
-    right: 153px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #D2D6DD;
-    z-index: 10; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -11613,7 +11595,8 @@ button {
 .sign-up {
   color: #E3C874;
   font-size: 22px;
-  font-family: "Baskerville-Bold";
+  font-family: "Century-Gothic";
+  font-weight: bold;
   width: fit-content; }
   .sign-up:hover img {
     margin-left: 25px; }
@@ -11622,13 +11605,28 @@ button {
     margin-left: 20px;
     width: 27px; }
 
+.social-img {
+  width: 33px;
+  height: 33px; }
+  .social-img.insta {
+    background-image: url(./assets/images/instagram.svg); }
+    .social-img.insta:hover {
+      background-image: url(./assets/images/instagram-gold.svg);
+      background-size: cover; }
+  .social-img.fb {
+    background-image: url(./assets/images/facebook.svg); }
+    .social-img.fb:hover {
+      background-image: url(./assets/images/facebook-gold.svg);
+      background-size: cover; }
+
 .price .nav-link {
   color: #5A5A5A; }
 
 header {
   padding: 15px 50px;
   border-bottom: 1px solid #D2D6DD;
-  font-family: "Baskerville-Semi-Bold";
+  font-family: "Century-Gothic";
+  font-weight: bold;
   font-size: 20px;
   z-index: 10;
   position: relative;
@@ -11669,6 +11667,24 @@ header {
   background-color: #222222;
   position: relative;
   overflow: hidden; }
+  .promo::before {
+    content: '';
+    position: absolute;
+    left: 153px;
+    top: 100px;
+    bottom: 0;
+    width: 2px;
+    background-color: #D2D6DD;
+    z-index: 10; }
+  .promo::after {
+    content: '';
+    position: absolute;
+    right: 153px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #D2D6DD;
+    z-index: 10; }
   .promo .bg-flower {
     position: absolute;
     left: 0;
@@ -11768,7 +11784,7 @@ header {
   .why-choose-us .title {
     font-size: 27px;
     font-family: "Baskerville-Semi-Bold";
-    color: #D2D6DD;
+    color: #E3C874;
     font-style: italic; }
   .why-choose-us .custom-card {
     border: 2px solid #D2D6DD;
@@ -11776,6 +11792,13 @@ header {
     text-align: center;
     position: relative;
     width: 400px; }
+    .why-choose-us .custom-card:hover {
+      background-color: #E3C874;
+      transition: all linear .2s; }
+      .why-choose-us .custom-card:hover .custom-card-title {
+        color: #fff; }
+      .why-choose-us .custom-card:hover .custom-card-desc {
+        color: #fff; }
     .why-choose-us .custom-card .num {
       position: absolute;
       left: 0;
@@ -11872,7 +11895,9 @@ header {
       text-align: center; }
       .services .thumbnail-services-slider .slide-title span {
         color: #CECECE;
-        font-family: "Baskerville-Semi-Bold"; }
+        font-family: "Century-Gothic";
+        font-weight: bold;
+        font-size: 14px; }
 
 .team {
   padding-top: 35px;
@@ -11906,7 +11931,23 @@ header {
       position: absolute;
       right: 0;
       bottom: 0;
-      padding-bottom: 70px; }
+      padding-bottom: 70px;
+      background-color: #ededed;
+      height: 530px; }
+      .team .team-slider .slide .dr-photo img:first-child {
+        width: auto;
+        height: 430px;
+        margin: auto;
+        position: absolute;
+        bottom: 70px;
+        right: 20%;
+        z-index: 5; }
+      .team .team-slider .slide .dr-photo .slide-bg {
+        width: auto;
+        position: absolute;
+        bottom: 50px;
+        height: 460px;
+        right: 11%; }
     .team .team-slider .slide .dr-photo-mobile {
       display: none; }
     .team .team-slider .slide .slide-desc {
@@ -11983,6 +12024,8 @@ footer {
           box-shadow: none;
           border-color: #fff;
           color: #fff; }
+          footer .contact-form form input:focus::placeholder {
+            opacity: 0; }
         footer .contact-form form input::placeholder {
           color: #fff; }
       footer .contact-form form .sign-up {
@@ -11993,7 +12036,7 @@ footer {
 
 .rights {
   padding: 20px 0;
-  background-color: #CECECE;
+  background-color: #E3C874;
   text-align: center;
   z-index: 11;
   position: relative; }
@@ -12105,16 +12148,16 @@ footer {
         color: #dcdcdc; }
 
 @media only screen and (max-width: 1440px) {
-  body::before {
-    left: 110px;
-    top: 70px; }
-  body::after {
-    top: 70px;
-    right: 110px; }
   .section-title {
     font-size: 60px; }
     .section-title::before {
       width: 300px !important; }
+  .promo::before {
+    left: 110px;
+    top: 70px; }
+  .promo::after {
+    top: 70px;
+    right: 110px; }
   .promo .bg-flower {
     top: 70px;
     height: calc(100vh - 70px); }
@@ -12193,10 +12236,6 @@ footer {
       font-size: 12px; } }
 
 @media only screen and (max-width: 400px) {
-  body::before {
-    display: none; }
-  body::after {
-    display: none; }
   .custom-container {
     overflow: hidden; }
   .section-title {
@@ -12264,6 +12303,10 @@ footer {
       width: 95px;
       height: 70px;
       margin: -4px -5px -5px 0; }
+  .promo::before {
+    display: none; }
+  .promo::after {
+    display: none; }
   .promo .bg-flower {
     top: 320px;
     left: -215px;

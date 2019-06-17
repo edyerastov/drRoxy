@@ -73,6 +73,11 @@ footer{
           box-shadow: none;
           border-color: #fff;
           color: #fff;
+
+          &::placeholder{
+            opacity: 0;
+          }
+
         }
         
         &::placeholder{

@@ -29,27 +29,6 @@ body{
   font-size: 17px;
   position: relative;
 
-  &::before{
-    content: '';
-    position: absolute;
-    left: 153px;
-    top: 100px;
-    bottom: 0;
-    width: 1px;
-    background-color: #D2D6DD;
-    z-index: 10;
-  }
-  &::after{
-    content: '';
-    position: absolute;
-    right: 153px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #D2D6DD;
-    z-index: 10;
-  }
-
 }
 *{
   -webkit-box-sizing: border-box;
@@ -140,7 +119,8 @@ button{
 .sign-up{
   color: $gold;
   font-size: 22px;
-  font-family: "Baskerville-Bold";
+  font-family: "Century-Gothic";
+  font-weight: bold;
   width: fit-content;
 
   &:hover img{
@@ -153,4 +133,29 @@ button{
     width: 27px;
   }
 
+}
+.social-img{
+  width: 33px;
+  height: 33px;
+  
+  &.insta{
+    background-image: url(../assets/images/instagram.svg);
+    
+    &:hover{
+      background-image: url(../assets/images/instagram-gold.svg);
+      background-size: cover;
+    }
+    
+  }
+  
+  &.fb{
+    background-image: url(../assets/images/facebook.svg);
+    
+    &:hover{
+      background-image: url(../assets/images/facebook-gold.svg);
+      background-size: cover;
+    }
+    
+  }
+  
 }

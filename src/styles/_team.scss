@@ -48,6 +48,27 @@
         right: 0;
         bottom: 0;
         padding-bottom: 70px;
+        background-color: #ededed;
+        height: 530px;
+
+        img:first-child{
+          width: auto;
+          height: 430px;
+          margin: auto;
+          position: absolute;
+          bottom: 70px;
+          right: 20%;
+          z-index: 5;
+        }
+
+        .slide-bg{
+          width: auto;
+          position: absolute;
+          bottom: 50px;
+          height: 460px;
+          right: 11%;
+        }
+
       }
 
       .dr-photo-mobile{

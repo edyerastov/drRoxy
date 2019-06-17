@@ -1,6 +1,7 @@
 doctype html
 head
     meta(name="viewport" content="width=device-width")
+    link(rel="icon" href="../../assets/images/favicon.png" type="image/x-icon")
 
 section.promo
     img(src='../../assets/images/promo-bg.png').bg-flower
@@ -8,9 +9,10 @@ section.promo
     include modules/promo
     .socials.d-flex.flex-column.align-items-center
         a(href="")
-            img(src='../../assets/images/instagram.svg')
+            .social-img.insta
         a(href="")
-            img(src='../../assets/images/facebook.svg')
+            .social-img.fb
+            //img(src='../../assets/images/facebook.svg')
 
 .custom-container
     section.about

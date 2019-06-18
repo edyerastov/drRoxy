@@ -1,5 +1,6 @@
 import 'owl.carousel';
 import 'bootstrap/dist/js/bootstrap.min';
+import AOS from 'aos/dist/aos'
 
 $('.promo-slider').owlCarousel({
     loop:true,
@@ -71,6 +72,11 @@ $('.team-slider').owlCarousel({
     dots: true,
     items: 1
 });
+
+//------
+
+AOS.init();
+
 
 //------
 
